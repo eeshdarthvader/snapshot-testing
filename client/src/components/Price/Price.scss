@@ -1,0 +1,44 @@
+@import '~bpk-mixins';
+
+.Price {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  &__itinerary-priceblock {
+    max-width: 100%;
+    padding-right: .375rem;
+    flex: 0 1 auto;
+    font-size: $bpk-font-size-base;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: $bpk-line-height-base;
+    text-align: left;
+  }
+
+  &__itinerary-priceblock-container {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__itinerary-priceblock-price {
+    display: block;
+    font-size: $bpk-h-2-font-size;
+    font-weight: 400;
+  }
+
+  &__itinerary-priceblock-supplier {
+    color: $bpk-color-gray-300;
+  }
+
+  &__select {
+    height: $bpk-spacing-xxl;
+    padding: .3rem 1.8rem;
+    align-self: flex-end;
+    font-size: $bpk-font-size-base;
+    font-weight: 500;
+  }
+}

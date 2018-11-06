@@ -13,14 +13,15 @@ const STATUS_CODES = {
   NOT_MODIFIED: 304,
 };
 
-const formatParams = params => querystring.stringify({
-  country: 'UK',
-  currency: 'GBP',
-  locale: 'en-GB',
-  locationSchema: 'Sky',
-  apiKey: config.apiKey,
-  ...params,
-});
+const formatParams = params =>
+  querystring.stringify({
+    country: 'UK',
+    currency: 'GBP',
+    locale: 'en-GB',
+    locationSchema: 'Sky',
+    apiKey: config.apiKey,
+    ...params,
+  });
 
 const createSession = async (params) => {
   console.log('Creating a session..');
@@ -53,7 +54,7 @@ const poll = async (location) => {
   await throttle();
   console.log('Polling results..');
   try {
-    const response = await fetch(`${location}?apikey=${config.apiKey}`);
+    const response = await fetch(`${location}?apikey=${config.apiKey}&pageIndex=0&pageSize=10`);
     if (response.status === STATUS_CODES.NOT_MODIFIED) {
       return cache;
     }

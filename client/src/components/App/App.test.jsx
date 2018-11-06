@@ -4,6 +4,8 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 
 import App from './App';
 
+jest.mock('./apiCalls');
+
 describe('App', () => {
   it('should render without crashing', () => {
     const div = document.createElement('div');
@@ -11,11 +13,10 @@ describe('App', () => {
     ReactDOM.render(<App />, div);
   });
 
-  it('should render correctly', () => {
+  it('should render correctly', async () => {
     const renderer = new ShallowRenderer();
-    renderer.render(<App />);
+    await renderer.render(<App />);
 
     expect(renderer.getRenderOutput()).toMatchSnapshot();
   });
 });
-

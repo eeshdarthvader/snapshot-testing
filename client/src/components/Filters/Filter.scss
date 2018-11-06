@@ -1,0 +1,26 @@
+@import '~bpk-mixins';
+
+.Filter {
+  padding: $bpk-spacing-xs;
+  border-radius: 0;
+  background-color: $bpk-color-white;
+  color: $bpk-color-blue-400;
+  box-shadow: none;
+
+  @include bpk-border-bottom-sm($bpk-color-gray-100);
+
+  &__filter-attr {
+    display: inline-flex;
+    padding: $bpk-spacing-sm;
+  }
+
+  &__filter-price-alert {
+    float: right;
+  }
+
+  &__price-alert-icon {
+    margin-right: $bpk-spacing-xs;
+    fill: $bpk-color-blue-500;
+  }
+}
+

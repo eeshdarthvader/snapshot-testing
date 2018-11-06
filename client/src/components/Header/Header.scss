@@ -17,4 +17,13 @@
     height: $bpk-spacing-base;
     vertical-align: top;
   }
+
+  &__burger-icon {
+    fill: $bpk-color-blue-500;
+  }
+
+  &__burger-svg {
+    width: $bpk-line-height-base;
+    height: $bpk-line-height-base;
+  }
 }

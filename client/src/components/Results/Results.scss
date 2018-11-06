@@ -1,0 +1,7 @@
+@import '~bpk-mixins';
+
+.Results {
+  &__card-results {
+    margin-bottom: $bpk-spacing-md;
+  }
+}

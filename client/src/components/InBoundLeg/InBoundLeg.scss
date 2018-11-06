@@ -1,0 +1,96 @@
+@import '~bpk-mixins';
+
+.ResultsInbound {
+  &__itinerary-return {
+    display: flex;
+    width: 100%;
+    padding-bottom: $bpk-spacing-sm;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex: 1 1;
+    flex-basis: 78%;
+    text-align: center;
+  }
+
+  &__itinerary-depart {
+    max-width: 20%;
+    padding-left: $bpk-spacing-md;
+    flex: 0 1 20%;
+    font-size: $bpk-font-size-base;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: $bpk-line-height-base;
+    text-align: left;
+  }
+
+  &__itinerary-arrive {
+    max-width: 25%;
+    padding-left: $bpk-spacing-md;
+    flex: 0 1 25%;
+    font-size: $bpk-font-size-base;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: $bpk-line-height-base;
+    text-align: left;
+  }
+
+  &__itinerary-depart-time {
+    display: block;
+  }
+
+  &__itinerary-depart-city {
+    color: $bpk-color-gray-500;
+    text-align: left;
+  }
+
+  &__itinerary-arrive-time {
+    display: block;
+  }
+
+  &__itinerary-arrive-city {
+    color: $bpk-color-gray-500;
+    text-align: left;
+  }
+
+  &__itinerary-time-duration-container {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+  }
+
+  &__itinerary-time-duration {
+    align-self: flex-end;
+    flex: 0 1 auto;
+    color: $bpk-color-gray-400;
+    text-align: right;
+  }
+
+  &__itinerary-stops {
+    max-width: 12%;
+    margin-top: .875rem;
+    flex: 0 1 12%;
+    font-size: $bpk-font-size-base;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: $bpk-line-height-base;
+    text-align: center;
+  }
+
+  &__itinerary-stops-icon {
+    fill: $bpk-color-gray-300;
+  }
+
+  &__airline-logo {
+    width: $bpk-spacing-base;
+    height: $bpk-spacing-base;
+    margin-top: $bpk-border-radius-xs;
+
+    img {
+      border-radius: $bpk-border-radius-xs;
+    }
+  }
+
+  &__itinerary-green {
+    color: $bpk-color-green-500;
+  }
+}

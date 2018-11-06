@@ -21,5 +21,17 @@
     "react-dom": "^16.3.1",
     "react-test-renderer": "^16.3.1"
   },
-  "proxy": "http://localhost:4000"
+  "proxy": "http://localhost:4000",
+  "dependencies": {
+    "bpk-component-button": "^2.1.27",
+    "bpk-component-card": "^1.1.40",
+    "bpk-component-icon": "^3.23.11",
+    "bpk-component-image": "^2.0.65",
+    "bpk-component-progress": "^1.0.95",
+    "bpk-component-spinner": "^2.2.57",
+    "bpk-theming": "^1.1.17",
+    "bpk-tokens": "^27.2.0",
+    "prop-types": "^15.6.2",
+    "querystring": "^0.2.0"
+  }
 }

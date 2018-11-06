@@ -1,7 +1,14 @@
 @import '~bpk-mixins';
 
 .App {
+  height: 100%;
+  background-color: $bpk-color-gray-50;
+
   &__main {
+    padding: 0;
+  }
+
+  &__results {
     padding: $bpk-spacing-sm;
   }
 }
